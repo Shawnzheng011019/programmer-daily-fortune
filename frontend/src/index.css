@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Fira Code', monospace;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+  color: #d4d4d4;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(0, 122, 204, 0.3);
+}
+
+.code-block {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-family: 'Fira Code', monospace;
+}
+
+.fortune-card {
+  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+  border: 1px solid #404040;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.loading-spinner {
+  border: 3px solid #333;
+  border-top: 3px solid #007acc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
